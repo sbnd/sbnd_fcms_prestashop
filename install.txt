@@ -1,0 +1,24 @@
+1) create folder shop in project root.
+	1.1) exclude new folder from rewrite rule in htaccess file
+		 RewriteCond %{REQUEST_FILENAME} !/shop
+	
+2) put clean copy of prestashop in root/shop/ 
+
+	NOTE: use prestashop with version 1.5.3.1
+
+3) go in root/shop/install/ and install prestashop 
+	3.1) delete install directory
+	3.2) rename root/shop/install/ to root/shop/cp/
+	3.3) log in prestashop control panel root/shop/cp/ and activate frendly url in Preferences > SEO & URLs
+
+4) Unpack prestashop_packet.rar in project root
+
+5. in SBND F&CMS create new settings
+		5.1) SHOP_ADMIN_FOLDER = 'cp' 
+		5.2) SHOP_FOLDER = 'shop'
+	
+6. Create admin user in SBND F&CMS with user and pass of prestashop admin user
+
+That is all :)
+
+Thank you for your interest and enjoy SBND F&CMS - Framework & CMS for PHP developers.
